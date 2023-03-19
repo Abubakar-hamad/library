@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(./assets/fonts/stylesheet.css) ;
+
+body{
+ font-family: 'Cairo', serif;
+}
+.nav  {
+  list-style: none;
+  display: flex;
+ 
+}

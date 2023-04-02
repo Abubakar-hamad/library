@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Departments from './pages/Departments';
+import Footer from './components/Footer';
 AOS.init();
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route  path='/departments' element={<Departments />} />
         
       </Routes>
+      <Footer />
     </div>
     </Router>
     </>

@@ -71,7 +71,7 @@ const Home = () => {
     </div>
 
         {scrl >800 ? 
-          <div className=' bottom-5 z-20 hover:scale-125 transition-all delay-100 cursor-pointer flex items-center justify-center rounded-full w-12 h-12 fixed bg-blue-400 ' onClick={()=>window.scrollTo(10  , 0)}>
+          <div className=' bottom-1 right-2 z-20 hover:scale-125 transition-all delay-100 cursor-pointer flex items-center justify-center rounded-full w-12 h-12 fixed bg-blue-300 ' onClick={()=>window.scrollTo(10  , 0)}>
               <img className='h-8 w-8 ' src={up} alt="" />
           </div>
           :

@@ -6,7 +6,7 @@ const Depart = ({title , card}) => {
   const [drop  , setDrop] = useState(false)
 
   return (
-    <div data-aos="flip-up"  className=' my-12  '>
+    <div data-aos="flip-up"  className='mb-8'>
        <div className="heder flex items-center">
        <h1 className='col-1 w- text-xl w-48 ' > {title}</h1> 
        <div className='col-4 w-full h-1 bg-slate-400'></div>

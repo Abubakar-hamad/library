@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Departments from './pages/Departments';
 import Footer from './components/Footer';
+import Books from './pages/Books';
 AOS.init();
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
       <Route  path='/' element={<Home  />} />
       <Route  path='/departments' element={<Departments />} />
+      <Route  path='/Books' element={<Books />} />
         
       </Routes>
       <Footer />

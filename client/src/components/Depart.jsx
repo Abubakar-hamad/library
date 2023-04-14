@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import down from '../assets/img/down.png'
 import lup from '../assets/img/lup.png'
-import Card from './Card'
 const Depart = ({title , card}) => {
   const [drop  , setDrop] = useState(false)
 

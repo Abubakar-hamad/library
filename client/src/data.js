@@ -1,9 +1,17 @@
+export let college = [
+  {id:1 , title:"كلية العلوم الطبية"} ,
+  {id:2, title:"كلية الهندسة"} ,
+  {id:3 , title:"كلية الموارد الطبيعية"} ,
+  {id:4 , title:"العلوم الإدارية"} ,
+  {id:5 , title:"كلية التربية واللغات"} ,
+]
+
 export let med = [
-    {id:1 , title:"كلية الطب"  , text:""}  ,
-    {id:2 , title:"كلية الصيدلة"  , text:""}  ,
-    {id:3 , title:"كلية المختبرات الطبية"  , text:""}  ,
-    {id:4 , title:"كلية طب الاسنان"  , text:""}  ,
-    {id:5 , title:"كلية التمريض"  , text:""}  ,
+    {id:1 , title:" الطب"  , text:""}  ,
+    {id:2 , title:" الصيدلة"  , text:""}  ,
+    {id:3 , title:" المختبرات الطبية"  , text:""}  ,
+    {id:4 , title:" طب الاسنان"  , text:""}  ,
+    {id:5 , title:" التمريض"  , text:""}  ,
   ]
   
   
@@ -18,9 +26,9 @@ export let med = [
   ]
   
   export let natural = [
-    {id:1 , title:"كلية الزراعة" , text:""}  ,
+    {id:1 , title:" الزراعة" , text:""}  ,
     {id:2 , title:" الانتاج الحيواني" , text:""}  ,
-    {id:3 , title:"كلية الغابات" , text:""}  ,
+    {id:3 , title:" الغابات" , text:""}  ,
     {id:4 , title:" الطب البيطري" , text:""}  ,
   ]
   
@@ -33,7 +41,7 @@ export let med = [
    ]
   
    export let edu = [
-    {id:1 , title:"كلية اللغات" , text:""}  ,
+    {id:1 , title:" اللغات" , text:""}  ,
     {id:2 , title:"قسم اصول التربية" , text:""}  ,
     {id:3 , title:"علم النفس" , text:""}  ,
     {id:4 , title:"تكنولوجيا التعليم" , text:""}  ,

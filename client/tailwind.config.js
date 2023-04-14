@@ -8,7 +8,13 @@ module.exports = {
       center:true ,
       padding:"2rem",
     },
+   
+  
+   
   }
 },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+
+  ],
 }

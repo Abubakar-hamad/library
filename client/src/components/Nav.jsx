@@ -17,7 +17,7 @@ const Nav = ({scrl}) => {
     <NavLink to='/departments' > الاقسام</NavLink>
 </li>
 <li className='ml-5'>
-    <NavLink to='/' > الكتب</NavLink>
+    <NavLink to='/books' > الكتب</NavLink>
 </li>
 
 <li className='ml-5'>

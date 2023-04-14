@@ -5,9 +5,10 @@ import link from '../assets/img/link.png'
 import twitter from '../assets/img/twitter.png'
 const Footer = () => {
   return (
-    <div className='bg-slate-900 text-white h-72 w-full p-5 mt-24 grid grid-cols-4 justify-center items-center ' >
+    
+    <div className='bg-gradient-to-t from-slate-900 to-slate-600  text-white h-72 w-full p-5 mt-24 grid grid-cols-4 justify-center items-center  ' >
         <div className=" pb-6  h-48 log grid  justify-center items-center text-center">
-        <img className='w-36 h-36 mx-auto' src={Logo} alt="" />
+        <img className='w-36 h-36 mx-auto cursor-pointer'  src={Logo} alt="" />
         <p className='px-3 text-md'>موقع الجامعة  .. معرف لاقسام وكليات الجامعة وتوفير الكتب والبحوث للدارسين</p>
         </div>
         <div className="email   h-48 grid  justify-between items-center text-center">

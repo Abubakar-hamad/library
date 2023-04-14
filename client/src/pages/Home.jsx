@@ -15,8 +15,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/scrollbar'
 import 'swiper/css/navigation'
-import { A11y, EffectCards , EffectFade, Navigation, Pagination, Scrollbar   } from "swiper";
-import Btn from '../components/Btn'
+import { A11y, Navigation, Pagination, Scrollbar   } from "swiper";
 
 const Home = () => {
   const [scrl , setScrl] = useState("") 

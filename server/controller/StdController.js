@@ -3,17 +3,37 @@ import StdModel from "../models/StdModel.js";
 import ProcModel from "../models/Processes.js";
 import DepartModel from "../models/DepartModel.js";
 
+
+
+const date = new Date();
+
+
+let currentMonth = String(date.getMonth()+1).padStart(2,"0");
+let currentDay = date.getDay()
+let currentYear = date.getFullYear();
+let currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
+let dateId = (currentDate.slice(2))
+
+
+
 export const addStd = asyncHandler(async(req , res)=>{
-    const {stdId , name  , college , depart , level , fee , paid , remaining } = req.body
-    if(!stdId || !name)
+    const { stdId ,name  , college , depart , level , fee , paid , remaining } = req.body
+    let id = `${dateId}-` ;
+     
+    if(!name)
         res.status(400).json("field required")
     
-    const isStdID = await StdModel.findOne({stdId:req.body.stdId})
+    const isStdID = await StdModel.findOne({stdId:`${id}${req.body.stdId}`})
     if(isStdID)
-        return res.status(400).json("student ID is booked up")
+        return res.status(400).json("stdId is boken");
+
     const std  = new StdModel({
-        ...req.body
+        ...req.body ,
+         stdId:`${id}${req.body.stdId}`
     }) 
+
+ 
+    
     const userProc = new ProcModel({
         username:req.user.username ,
         procType:"addStd" ,
